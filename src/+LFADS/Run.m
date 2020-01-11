@@ -1012,7 +1012,7 @@ classdef Run < handle & matlab.mixin.CustomDisplay
                         end
 
                         fname = fullfile(r.pathCommonData, inputInfoNames{iDS});
-                        save(fname, 'trainInds', 'validInds', 'paramInputDataHash', 'seq_timeVector', 'seq_binSizeMs', 'conditionId', 'counts', extra{:}, , '-v7.3');
+                        save(fname, 'trainInds', 'validInds', 'paramInputDataHash', 'seq_timeVector', 'seq_binSizeMs', 'conditionId', 'counts', extra{:});
                     end
                 end
                 prog.finish();
